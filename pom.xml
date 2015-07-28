@@ -9,9 +9,31 @@
     <version>0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>Devourer</name>
-    <description>Feeds on XML and produces objects</description>
-    <url>http://bitbucket.org/googolplex/devourer</url>
+    <name>GWTWebsocket</name>
+    <description>Websocket component for GWT</description>
+    <url>https://github.com/bryazginkos/gwt-websocket-lib</url>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <url>https://github.com/bryazginkos/gwt-websocket-lib</url>
+        <connection>scm:git:git://github.com/bryazginkos/gwt-websocket-lib.git</connection>
+    </scm>
+
+    <developers>
+        <developer>
+            <id>owner</id>
+            <name>Konstantin Brjazgin</name>
+            <email>bryazginkos@yahoo.com</email>
+            <timezone>UTC+6</timezone>
+        </developer>
+    </developers>
 
     <dependencies>
         <dependency>
