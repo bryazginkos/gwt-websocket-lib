@@ -38,9 +38,9 @@ public class WSComponent<S, G> {
         loadedLib = true;
     }
 
-    public void send(S s) {
+    public void send(S s, String url) {
         String json = sConverter.serialize(s);
-        send(json);
+        send(url, json);
     }
 
     public native void connect() /*-{
@@ -60,7 +60,7 @@ public class WSComponent<S, G> {
         configuration.getCallback().onMessage(ans);
     }
 
-    private native void send(String json) /*-{
-        stompClient.send("/app/say", {}, json);
+    private native void send(String sendUrl, String json) /*-{
+        stompClient.send(sendUrl, {}, json);
     }-*/;
 }
