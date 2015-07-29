@@ -1,4 +1,4 @@
-package ru.kos.gwtwebsocket.client;
+package ru.kosdev.gwtwebsocket.client;
 
 import com.google.gwt.core.client.JavaScriptObject;
 import com.google.gwt.core.client.ScriptInjector;
@@ -45,12 +45,12 @@ public class WSComponent<S, G> {
 
     public native void connect() /*-{
         var obj = this;
-        var socket = new SockJS(obj.@ru.kos.gwtwebsocket.client.WSComponent::url);
+        var socket = new SockJS(obj.@ru.kosdev.gwtwebsocket.client.WSComponent::url);
         stompClient = Stomp.over(socket);
         stompClient.connect({}, function(frame) {
             console.log('Connected: ' + frame);
-            stompClient.subscribe(obj.@ru.kos.gwtwebsocket.client.WSComponent::subscribeUrl, function(answer){
-                obj.@ru.kos.gwtwebsocket.client.WSComponent::handleAnswer(Ljava/lang/String;)(answer.body);
+            stompClient.subscribe(obj.@ru.kosdev.gwtwebsocket.client.WSComponent::subscribeUrl, function(answer){
+                obj.@ru.kosdev.gwtwebsocket.client.WSComponent::handleAnswer(Ljava/lang/String;)(answer.body);
             });
         });
     }-*/;

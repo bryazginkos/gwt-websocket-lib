@@ -1,4 +1,4 @@
-package ru.kos.gwtwebsocket.client;
+package ru.kosdev.gwtwebsocket.client;
 
 import com.google.web.bindery.autobean.shared.AutoBeanFactory;
 
