@@ -3,7 +3,7 @@ package ru.kosdev.gwtwebsocket.client;
 import com.google.web.bindery.autobean.shared.AutoBeanFactory;
 
 /**
- * Created by Константин on 27.07.2015.
+ * Created by kos on 27.07.2015.
  */
 public class WSConfiguration<S, G> {
 

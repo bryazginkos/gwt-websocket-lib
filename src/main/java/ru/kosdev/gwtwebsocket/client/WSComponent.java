@@ -4,7 +4,7 @@ import com.google.gwt.core.client.JavaScriptObject;
 import com.google.gwt.core.client.ScriptInjector;
 
 /**
- * Created by Константин on 25.07.2015.
+ * Created by kos on 25.07.2015.
  */
 public class WSComponent<S, G> {
 

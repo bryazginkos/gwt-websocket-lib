@@ -1,7 +1,7 @@
 package ru.kosdev.gwtwebsocket.client;
 
 /**
- * Created by Константин on 27.07.2015.
+ * Created by kos on 27.07.2015.
  */
 public class WSConfigurationValidator {
 

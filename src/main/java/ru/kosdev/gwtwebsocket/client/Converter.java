@@ -5,7 +5,7 @@ import com.google.web.bindery.autobean.shared.AutoBeanCodex;
 import com.google.web.bindery.autobean.shared.AutoBeanFactory;
 
 /**
- * Created by Константин on 26.07.2015.
+ * Created by kos on 26.07.2015.
  */
 public class Converter<I> {
 
