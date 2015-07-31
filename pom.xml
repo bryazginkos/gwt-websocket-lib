@@ -35,6 +35,19 @@
         </developer>
     </developers>
 
+    <build>
+        <resources>
+            <resource>
+                <directory>${basedir}/src/main/java</directory>
+                <includes>
+                    <include>**/*.java</include>
+                    <include>**/*.gwt.xml</include>
+                    <include>**/*.js</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
+
     <dependencies>
         <dependency>
             <groupId>com.google.gwt</groupId>
@@ -42,5 +55,7 @@
             <version>2.7.0</version>
         </dependency>
     </dependencies>
+
+
 
 </project>
