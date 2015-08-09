@@ -16,6 +16,8 @@ public class WSComponent<S, G> {
 
     private final WSConfiguration<S, G> configuration;
 
+    private WSCallback<G> callback;
+
     private final String url;
     private final String subscribeUrl;
 
@@ -63,10 +65,16 @@ public class WSComponent<S, G> {
 
     private void handleAnswer(String answer) {
         G ans = gConverter.deserialize(answer);
-        configuration.getCallback().onMessage(ans);
+        if (callback != null) {
+            callback.onMessage(ans);
+        }
     }
 
     private native void send(String sendUrl, String json) /*-{
         stompClient.send(sendUrl, {}, json);
     }-*/;
+
+    public void setCallback(WSCallback<G> callback) {
+        this.callback = callback;
+    }
 }

@@ -15,8 +15,6 @@ public class WSConfiguration<S, G> {
     private String url;
     private String subscribeUrl;
 
-    private WSCallback<G> callback;
-
     public WSConfiguration() {
     }
 
@@ -56,14 +54,6 @@ public class WSConfiguration<S, G> {
         return this;
     }
 
-    public WSCallback<G> getCallback() {
-        return callback;
-    }
-
-    public WSConfiguration<S, G> withCallback(WSCallback<G> callback) {
-        this.callback = callback;
-        return this;
-    }
 
     public AutoBeanFactory getAutoBeanFactory() {
         return autoBeanFactory;
