@@ -43,6 +43,12 @@ public class WSComponent<S, G> {
         send(url, json);
     }
 
+    public native void disconnect() /*-{
+        if (stompClient != null) {
+            stompClient.disconnect();
+        }
+    }-*/;
+
     public native void connect() /*-{
         var obj = this;
         var socket = new SockJS(obj.@ru.kosdev.gwtwebsocket.client.WSComponent::url);
